@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/log.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+  </head>
+  <body>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+      <div id="home" class="w-100">
+        <div class="d-flex justify-content-center align-items-center vh-100">
+          <div
+            class="container d-flex justify-content-center align-items-center flex-column"
+          >
+            <div class="p-5 w-75 text-center text-uppercase shadow">
+              <h2>Smart Login System</h2>
+              <form action="">
+                <div>
+                  <input
+                    id="idNAME"
+                    class="form-control d-none my-3 up"
+                    placeholder="Enter your name"
+                    type="text"
+                  />
+                  <input
+                    id="idemail"
+                    class="form-control my-3 up valdation"
+                    placeholder="Enter your email up "
+                    type="email"
+                  />
+                  <div class="alert alert-danger d-none p-1">
+                    <small>please enter eimail like thise @yahoo.com </small>
+                  </div>
+                  <div class="position-relative">
+                    <input
+                      id="idpassword"
+                      class="form-control my-3 up valdation"
+                      placeholder="Enter your password"
+                      type="password"
+                    />
+                    <div class="alert alert-danger d-none p-1">
+                      <small
+                        >Minimum eight characters, at least one upper case
+                        English letter, one lower case English letter, one
+                        number and one special character
+                      </small>
+                    </div>
+                    <i id="show" class="fa-solid fa-eye"></i>
+                  </div>
+
+                  <p id="rong"></p>
+                </div>
+
+                <button id="login" class="btn btn-outline-info w-100 my-3">
+                  Login
+                </button>
+                <p class="text-black">
+                  Don’t have an account?
+                  <a id="singup" class="text-black">Sign Up</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/log.js"></script>
+  </body>
+</html>
